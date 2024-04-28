@@ -3,7 +3,7 @@
         <div class="nav-start hidden md:flex">
             <div class="nav-start-wrapper ">
                 <div class="icon">
-                    <a class="text-2xl font-bold" href="#">
+                    <a class="text-2xl font-bold" href="/">
                         <span class="text-red-600">Merah</span>
                         Putih
                     </a>
