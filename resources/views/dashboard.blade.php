@@ -4,7 +4,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    <form action="{{ route('product.store') }} method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         {{-- @foreach ($category as $item)
@@ -43,15 +43,15 @@
                             <td>
                                 <img src="{{asset('storage/' . $item->image)}}" alt="">
                             </td>
-                            <td>
-                                <a href="{{ route('product.edit', $id)}}">Edit</a>
+                            {{-- <td>
+                                <a href="{{ route("product.edit", $produk)}}">Edit</a>
 
-                                <form action="{{ route('product.destroy')}}" method="POST">
+                                <form action="{{ route("product.destroy", $produk)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button>Delete</button>
                                 </form>
-                            </td>
+                            </td> --}}
                         </tr>
                         @endforeach
                     </table>
