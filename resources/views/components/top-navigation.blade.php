@@ -26,7 +26,7 @@
         <div class="nav-end">
             <div class="nav-end-wrapper flex items-center gap-4">
                 <div class="cart">
-                    <a href="#">🛒</a>
+                    <a href="/cart">🛒</a>
                 </div>
                 <div class="profile">
                     <div class="avatar"></div>

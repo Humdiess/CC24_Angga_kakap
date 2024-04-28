@@ -1,5 +1,5 @@
 <a href="#">
-    <div class="product-card w-48 h-56 shadow-md rounded-md">
+    <div class="product-card w-48 h-56 shadow-md rounded-sm">
         <div class="card-wrapper">
             <div class="card-image w-full h-32 bg-slate-200 rounded-t-md">
                 <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"    alt="" class="w-full h-full rounded-t-md">

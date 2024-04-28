@@ -22,6 +22,10 @@ Route::get('/product/detail', function () {
     return view('user.product.detail');
 });
 
+Route::get('/cart', function () {
+    return view('user.cart');
+});
+
 Route::get('/admin', function () {
     return view('admin.dashboard');
 });
