@@ -4,21 +4,21 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-                    <form action="{{ route('product.update') }} method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('product.update', $product->id) }} method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 
-                        {{-- @foreach ($category as $item)
                         <select name="category" id="">
+                            @foreach ($category as $item)
                             <option value="{{$item->id}}">{{$item->name}}</option>
+                            @endforeach
                         </select><br>
-                        @endforeach --}}
 
-                        @foreach ($product as $item)
-                        <input type="text" placeholder="Masukkan Nama Produk" name="name"><br>
-                        <input type="text" placeholder="Masukkan Harga Produk" name="price"><br>
-                        <input type="text" placeholder="Masukkan Stock Produk" name="stock"><br>
-                        <input type="text" placeholder="Masukkan Deskripsi Produk" name="deskripsi"><br>
+                        @foreach ($produk as $item)
+                        <input type="text" placeholder="{{$item->name}}" name="name"><br>
+                        <input type="text" placeholder="{{$item->price}}" name="price"><br>
+                        <input type="text" placeholder="{{$item->stock}}" name="stock"><br>
+                        <input type="text" placeholder="{{$item->desc}}" name="deskripsi"><br>
                         <input type="file" name="image"><br>
                         <button type="submit">Submit</button>
                         @endforeach

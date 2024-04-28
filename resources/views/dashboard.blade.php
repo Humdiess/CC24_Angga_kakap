@@ -7,11 +7,12 @@
                     <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
-                        {{-- @foreach ($category as $item)
                         <select name="category" id="">
+                            @foreach ($category as $item)
                             <option value="{{$item->id}}">{{$item->name}}</option>
+                            @endforeach
                         </select><br>
-                        @endforeach --}}
+
 
                         <input type="text" placeholder="Masukkan Nama Produk" name="name"><br>
                         <input type="text" placeholder="Masukkan Harga Produk" name="price"><br>
@@ -43,15 +44,15 @@
                             <td>
                                 <img src="{{asset('storage/' . $item->image)}}" alt="">
                             </td>
-                            {{-- <td>
-                                <a href="{{ route("product.edit", $produk)}}">Edit</a>
+                            <td>
+                                <a href="{{ route("product.edit", $item->id)}}">Edit</a>
 
-                                <form action="{{ route("product.destroy", $produk)}}" method="POST">
+                                <form action="{{ route("product.destroy", $item->id)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button>Delete</button>
                                 </form>
-                            </td> --}}
+                            </td>
                         </tr>
                         @endforeach
                     </table>

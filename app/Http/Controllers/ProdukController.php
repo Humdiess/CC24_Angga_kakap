@@ -40,7 +40,7 @@ class ProdukController extends Controller
     public function store(Request $request)
     {
         product::create([
-            'category_id' => '3',
+            'category_id' => $request->category,
             'name' => $request->name,
             'price' => $request->price,
             'stock' => $request->stock,
@@ -71,9 +71,12 @@ class ProdukController extends Controller
      */
     public function edit($id)
     {
+        $produk = product::get();
+        $category = category::get();
+
         return view('edit', [
             'product' => product::find($id),
-        ]);
+        ], compact('produk', 'category'));
     }
 
     /**
@@ -85,7 +88,19 @@ class ProdukController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $produk = product::find($id);
+
+        $produk->update([
+            'category_id' => $request->category,
+            'name' => $request->name,
+            'price' => $request->price,
+            'stock' => $request->stock,
+            'rating' => '0',
+            'desc' => $request->deskripsi,
+            'image' => $request->file('image')->store('storage'),
+        ]);
+
+        return to_route('dashboard');
     }
 
     /**
