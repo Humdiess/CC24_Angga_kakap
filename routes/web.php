@@ -20,15 +20,15 @@ Route::get('/', function () {
 });
 
 // <<<<<<< CRUD
-// Route::get('/dashboard',[ProdukController::class, 'index'])
-// ->middleware(['auth', 'verified'])
-// ->name('dashboard');
+Route::get('/',[ProdukController::class, 'index'])
+->middleware(['auth', 'verified'])
+->name('dashboard');
 
-// Route::resource('product', ProdukController::class);
+Route::resource('product', ProdukController::class);
 // =======
-// Route::get('/product/detail', function () {
-//     return view('user.product.detail');
-// });
+Route::get('/product/detail', function () {
+    return view('user.product.detail');
+});
 
 // Route::get('/cart', function () {
 //     return view('user.cart');

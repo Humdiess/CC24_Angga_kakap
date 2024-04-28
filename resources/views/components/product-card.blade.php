@@ -1,16 +1,16 @@
-<a href="#">
+<a href="/product/detail">
     <div class="product-card w-48 h-56 shadow-md rounded-sm">
         <div class="card-wrapper">
             <div class="card-image w-full h-32 bg-slate-200 rounded-t-md">
-                <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"    alt="" class="w-full h-full rounded-t-md">
+                <img src="{{ $imgurl }}"    alt="" class="w-full h-full rounded-t-md">
             </div>
             <div class="card-details p-2">
                 <div class="card-details-wrapper">
                     <div class="detail-title">
-                        <p class="font-semibold">Ini nama produk yang di jual</p>
+                        <p class="font-semibold">{{ $name }}</p>
                     </div>
                     <div class="details-price-rating flex items-center gap-2 bottom-0">
-                        <p>Rp. 162.000</p>
+                        <p>{{ $price }}</p>
                         <div class="div w-1 h-1 rounded-full bg-slate-200">
                             <div class="bg-slate-200"></div>
                         </div>

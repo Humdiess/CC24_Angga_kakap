@@ -18,7 +18,7 @@ class ProdukController extends Controller
         $produk = product::get();
         $category = category::get();
 
-        return view('dashboard', compact('produk','category'));
+        return view('user.home-page', compact('produk','category'));
     }
 
     /**
