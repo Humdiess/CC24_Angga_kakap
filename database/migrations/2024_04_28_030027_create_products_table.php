@@ -17,11 +17,13 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id')->constrained();
             $table->string('name');
-            $table->string('slug');
-            $table->unsignedBigInteger('price_old');
-            $table->unsignedBigInteger('price_now');
+            // $table->string('slug');
+            // $table->unsignedBigInteger('price_old');
+            // $table->unsignedBigInteger('price_now');
+            // $table->unsignedBigInteger('stock');
+            // $table->unsignedBigInteger('avalaible_stock');
+            $table->unsignedBigInteger('price');
             $table->unsignedBigInteger('stock');
-            $table->unsignedBigInteger('avalaible_stock');
             $table->unsignedBigInteger('rating');
             $table->string('desc');
             $table->string('image');
