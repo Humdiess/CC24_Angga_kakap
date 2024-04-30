@@ -1,26 +1,25 @@
 <a href="#">
-    <div class="product-card w-48 h-56 shadow-md rounded-sm">
+    <div class="card bg-white shadow-md rounded-md">
         <div class="card-wrapper">
-            <div class="card-image w-full h-32 bg-slate-200 rounded-t-md">
-                <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"    alt="" class="w-full h-full rounded-t-md">
-            </div>
+            <img src="https://i.ytimg.com/an_webp/tZV_Ax9TyUY/mqdefault_6s.webp?du=3000&sqp=CIDVu7EG&rs=AOn4CLBwi-yvG6Hih0xjxOvLZfOKBPcx-Q" class="h-32" alt="">
+            
             <div class="card-details p-2">
-                <div class="card-details-wrapper">
-                    <div class="detail-title">
-                        <p class="font-semibold">Ini nama produk yang di jual</p>
-                    </div>
-                    <div class="details-price-rating flex items-center gap-2 bottom-0">
-                        <p>Rp. 162.000</p>
-                        <div class="div w-1 h-1 rounded-full bg-slate-200">
-                            <div class="bg-slate-200"></div>
+                <div class="detail-title">
+                    <h3 class="font">{{ $title }}</h3>
+                </div>
+                <div class="detail-price">
+                    <p class="font-semibold">{{ $price }}</p>
+                </div>
+                <div class="detail-city">
+                    <p class="text-sm text-slate-500">Kota Penjual</p>
+                </div>
+                <div class="detail-rating-selling">
+                    <div class="rating items-center">
+                        <div class="rating-icon">
+                            <p>⭐</p>
                         </div>
-                        <div class="info-rating flex gap-1 text-sm">
-                            <div class="rating-icon">
-                                <p>⭐</p>
-                            </div>
-                            <div class="rating-count">
-                                <p>5</p>
-                            </div>
+                        <div class="rating-count">
+                            <p class="text-sm text-slate-500">5.0</p>
                         </div>
                     </div>
                 </div>
@@ -28,18 +27,3 @@
         </div>
     </div>
 </a>
-
-{{-- <div class="product-card bg-white shadow-md w-48 h-54 rounded-md">
-    <div class="product-card-wrapper">
-        <div class="product-card-image h-36 bg-slate-200">
-            <img src="" alt="">
-        </div>
-        <div class="product-card-info p-2 h-28">
-            <div class="info-title w-full">
-                <p class="">Ini Judul yang dijudulkan menjdudulkan</p>
-            </div>
-
-
-        </div>
-    </div>
-</div> --}}

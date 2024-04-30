@@ -17,7 +17,7 @@
                 </div>
                 <div class="search-input">
                     <form action="#" class="flex gap-2">
-                        <input type="text" class="rounded-md inline-block w-80" placeholder="Cari sesuatu...">
+                        <input type="text" class="rounded-md inline-block md:w-80" placeholder="Cari sesuatu...">
                         <input type="submit" class="px-4 py-2 bg-red-600 rounded-md" value="🔎">
                     </form>
                     </div>

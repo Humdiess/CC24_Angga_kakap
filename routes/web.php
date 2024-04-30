@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -19,30 +20,28 @@ Route::get('/', function () {
     return view('user.home-page');
 });
 
-// <<<<<<< CRUD
-// Route::get('/dashboard',[ProdukController::class, 'index'])
-// ->middleware(['auth', 'verified'])
-// ->name('dashboard');
+Route::get('/', [HomeController::class, 'index']);
 
-// Route::resource('product', ProdukController::class);
-// =======
-// Route::get('/product/detail', function () {
-//     return view('user.product.detail');
-// });
+Route::get('/dashboard',[ProdukController::class, 'index'])
+->middleware(['auth', 'verified'])
+->name('dashboard');
 
-// Route::get('/cart', function () {
-//     return view('user.cart');
-// });
+Route::resource('product', ProdukController::class);
 
-// Route::get('/admin', function () {
-//     return view('admin.dashboard');
-// });
+Route::get('/product/detail', function () {
+    return view('user.product.detail');
+});
+
+Route::get('/cart', function () {
+    return view('user.cart');
+});
+
+Route::resource('admin', ProdukController::class);
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-// >>>>>>> main
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
