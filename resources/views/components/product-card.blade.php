@@ -1,7 +1,7 @@
 <a href="#">
     <div class="card bg-white shadow-md rounded-md">
         <div class="card-wrapper">
-            <img src="https://i.ytimg.com/an_webp/tZV_Ax9TyUY/mqdefault_6s.webp?du=3000&sqp=CIDVu7EG&rs=AOn4CLBwi-yvG6Hih0xjxOvLZfOKBPcx-Q" class="h-32" alt="">
+            <img src="" class="h-32 w-52" alt="">
             
             <div class="card-details p-2">
                 <div class="detail-title">

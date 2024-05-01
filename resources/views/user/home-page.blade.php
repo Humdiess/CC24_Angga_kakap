@@ -51,12 +51,40 @@
                         title="{{ $product->name }}"
                         price="Rp. {{ $product->price }}"
                     />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
+                    <x-product-card
+                        title="{{ $product->name }}"
+                        price="Rp. {{ $product->price }}"
+                    />
                 @endforeach
             </div>
         </div>
     </x-main-content-layout>
 
-    <div class="footer bg-red-600 bottom-0 w-full h-32 mt-8">
+    <div class="footer fixed bg-red-600 bottom-0 w-full h-32 mt-16">
         <div class="footer-wrapper">
 
         </div>
